@@ -140,22 +140,43 @@ console.log (convertCelsiusToFahrenheit(60))
 
 
 
-let arr = [20, 30, 40, 50, 100]
+// let arr = [20, 30, 40, 50, 100]
 
-console.log (arr[0])
-console.log (arr[1])
-console.log (arr[2])
-console.log (arr[3])
-console.log (arr[arr.length - 1])
+// console.log (arr[0])
+// console.log (arr[1])
+// console.log (arr[2])
+// console.log (arr[3])
+// console.log (arr[arr.length - 1])
 
 // arr.push(200)
 // console.log (arr[arr.length - 1])
-// console.log(arr)
+// // console.log(arr)
 
-let newArr = arr.filter ( (element) => {
-    console.log (element)
-    if (element <50)
-        return true;
-})
+// let newArr = arr.filter (element => element <50 )
+
+// console.log (newArr)
+
+let grades = [ "A+", "A", "FAIL"]
+
+let goodGrades = grades.filter(element => element !== "FAIL")
+console.log (goodGrades)
+
+let theGrades = []
+
+for (let i = 0; i < grades.length; ++i) {
+    if (grades [i] !== "FAIL") {
+        theGrades.push (grades[i])
+    }
+    console.log (theGrades)
+}
+
+let arr = [1, 4, 9, 16]
+
+let newArr = arr.map (element => undefined )
 
 console.log (newArr)
+
+
+let dollars = [1, 5, 10, 3]
+let cents = dollars.map (element => (dollars [i* 100]))
+console.log(cents)
