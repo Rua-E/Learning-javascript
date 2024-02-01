@@ -176,7 +176,10 @@ let newArr = arr.map (element => undefined )
 
 console.log (newArr)
 
+// let cents = dollars.map (element => element * 100)
+// console.log(cents)
 
-let dollars = [1, 5, 10, 3]
-let cents = dollars.map (element => (dollars [i* 100]))
-console.log(cents)
+let dollars = [ 1, 5, 10, 3];
+let cents = []
+
+for ()
